@@ -29,7 +29,7 @@
  *
  *
  * @apiErrorExample ValidationError:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  * 		"error": {
  *  		"message": "Invalid Data",
@@ -44,7 +44,7 @@
  *
  *
  * @apiErrorExample UsernameOrEmailHasBeenUsed:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "Username/Email has been registered"
@@ -52,7 +52,7 @@
  *  }
  *
  */
- function registAction() { return; }
+ 
  /**
  * @api {post} /session/login Session Login
  * @apiName SessionLogin
@@ -80,7 +80,7 @@
  * @apiError (409) WrongUsernameOrPassword Wrong username/password combination.
  *
  * @apiErrorExample ValidationError:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "Invalid Data",
@@ -94,10 +94,9 @@
  *   }
  *
  * @apiErrorExample WrongUsernameOrPassword:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *   {
  *		"field": "username",
  *		"message": "wrong username/password combination"
  *   }
  */
- function loginAction() { return; }

@@ -29,7 +29,7 @@
  * @apiError (409) NotAuthenticated Only authenticated user can read the data.
  *
  * @apiErrorExample NotAuthenticated:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "You don't have permission"
@@ -37,7 +37,7 @@
  *  }
  *
  */
- function indexAction($id) {return;}
+
  /**
  *
  * @api {get} /user/:id Get a User Information 
@@ -66,7 +66,7 @@
  * @apiError (404) UserNotFound The <code>id</code> of the User was not found.
  *
  * @apiErrorExample NotAuthenticated:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "You don't have permission"
@@ -82,7 +82,7 @@
  *  }
  *
  */
- function readAction($id) {return;}
+
  /**
  *
  * @api {post} /user/update-username Update Username 
@@ -115,7 +115,7 @@
  * @apiError (409) UsernameNotAvailable Username is not available.
  *
  * @apiErrorExample NotAuthenticated:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "You don't have permission"
@@ -146,7 +146,7 @@
  *
  *
  * @apiErrorExample MaximumUpdate:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "Username Update Has Passed the Maximum Limit"
@@ -154,7 +154,7 @@
  *  }
  *
  * @apiErrorExample BlockedUsername:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "Username can't be used"
@@ -162,7 +162,7 @@
  *  }
  *
  * @apiErrorExample ReUseUsername:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "New username can't be the same with old username"
@@ -170,7 +170,7 @@
  *  }
  *
  * @apiErrorExample UsernameNotAvailable:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "Username is not available"
@@ -178,7 +178,7 @@
  *  }
  *
  */
- function updateUsernameAction() {return;}
+
  /**
  *
  * @api {post} /user/update-password Update Password 
@@ -209,7 +209,7 @@
  * @apiError (409) MaximumUpdate Password update has passed the maximum limit.
  *
  * @apiErrorExample NotAuthenticated:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "You don't have permission"
@@ -217,7 +217,7 @@
  *  }
  *
  * @apiErrorExample ValidationError:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  * 		"error": {
  *  		"message": "Invalid Data",
@@ -248,7 +248,7 @@
  *
  *
  * @apiErrorExample MaximumUpdate:
- *  HTTP/1.1 409 Conflit
+ *  HTTP/1.1 409 Conflict
  *	{
  *		"error": {
  *			"message": "Password Update Has Passed the Maximum Limit"
@@ -256,4 +256,3 @@
  *  }
  *
  */
- function updatePasswordAction() {return;}
